@@ -1,0 +1,36 @@
+.weather {
+  max-width: 1040px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.weather select {
+  max-width: 100%;
+}
+
+.weather p {
+  font-size: 1rem;
+  color: #333;
+  padding: 1.5rem 0;
+}
+.weather h2 {
+  padding-top: 10%;
+}
+
+@media screen and (max-width: 920px) {
+  .weather {
+    grid-template-columns: 1fr;
+  }
+
+  .weather select {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .weather h2 {
+    padding-top: 10%;
+  }
+}
