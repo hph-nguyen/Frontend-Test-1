@@ -12,7 +12,13 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    colors: {
+      white: "#fff",
+      lila: "#7544FC",
+      lime: "#92C6A7",
+      orange: "#FF6F4B",
+      "orange-dark": "#E56343",
+    },
   },
   plugins: [addVariablesForColors],
 };

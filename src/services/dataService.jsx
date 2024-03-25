@@ -16,7 +16,7 @@ export const getCurrentCityWeather = async (latitude, longitude) => {
 
 export const getSelectedCityWeather = async (location) => {
   try {
-    const response = await http.get("forecast.json", {
+    const response = await http.get("current.json", {
       params: {
         q: `${location}`,
         lang: "de",

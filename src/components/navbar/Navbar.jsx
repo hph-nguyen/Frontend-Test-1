@@ -1,31 +1,43 @@
-import { React, useState } from "react";
-import styles from "./Navbar.module.css";
-import Logo from "../../images/logo_2.png";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import Logo from "../../images/cons Logo.svg";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-
   return (
-    <header className={styles.navbar}>
-      <img src={Logo} alt="Logo" />
-      <nav>
-        <ul className={nav ? [styles.menu, styles.active].join(" ") : [styles.menu]}>
-          <li>
-            <a href="/#">About</a>
-          </li>
-          <li>
-            <a href="/#">Log in</a>
-          </li>
-          <li>
-            <a href="/#">Sign up</a>
-          </li>
-        </ul>
-      </nav>
-      <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
-        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+    <nav className="sticky top-0 z-10">
+      <div className="bg-lila">
+        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+          <a href="/" className="flex items-center space-x-3">
+            <img src={Logo} className="h-10" alt="Cons Logo" />
+          </a>
+        </div>
       </div>
-    </header>
+      <div className="bg-lila  pb-3">
+        <div className="max-w-screen-xl px-4 py-3 mx-auto">
+          <div className="flex items-center">
+            <ul className="flex flex-row mt-0 space-x-8 text-sm text-white font-bold">
+              <li>
+                <a href="/" className="group">
+                  Lorem
+                  <span className="block max-w-0 group-hover:max-w-full mt-1 first: h-1 bg-lime"></span>
+                </a>
+              </li>
+
+              <li>
+                <a href="/" className="group">
+                  Ipsum
+                  <span className="block max-w-0 group-hover:max-w-full mt-1 first: h-1 bg-lime"></span>
+                </a>
+              </li>
+              <li>
+                <a href="/" className="group">
+                  Dolor
+                  <span className="block max-w-0 group-hover:max-w-full mt-1 first: h-1 bg-lime"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 };
 
