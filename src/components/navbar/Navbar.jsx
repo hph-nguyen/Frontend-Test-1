@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-10">
       <div className="bg-lila">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-          <a href="/" className="flex items-center space-x-3">
+          <a href="#" className="flex items-center space-x-3">
             <img src={Logo} className="h-10" alt="Cons Logo" />
           </a>
         </div>
