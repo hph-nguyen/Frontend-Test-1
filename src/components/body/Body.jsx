@@ -30,7 +30,7 @@ function Body() {
           <p className="text-5xl text-lime py-28 text-left p-3">
             <span className="font-bold">Lorem ipsum dolor sit amet,</span> consetetur sadipscing elitr.
           </p>
-          <img src={Img1} className="mb-[-10rem] rounded-[4%] p-3"></img>
+          <img src={Img1} className="mb-[-10rem] rounded-[4%] p-3" alt="/"></img>
         </div>
       </div>
 
