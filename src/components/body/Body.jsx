@@ -58,7 +58,7 @@ function Body() {
           <p className="mb-2">
             <span className="font-bold">Lorem ipsum dolor sit amet,</span> consetetur sadipscing elitr.
           </p>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-2 w-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-2 w-auto text-black">
             <input
               type="text"
               placeholder="Name"
