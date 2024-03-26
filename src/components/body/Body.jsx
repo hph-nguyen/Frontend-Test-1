@@ -49,12 +49,12 @@ function Body() {
       </div>
 
       <div className="grid gridcols-1 md:grid-cols-2 gap-3 w-full max-w-screen-xl">
-        <Card className="bg-lime text-white p-10">
+        <Card className="bg-lime text-white">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
           clita kasd gubergren, no sea takimata sanctus est.
         </Card>
-        <Card className="bg-lila text-lime p-10">
+        <Card className="bg-lila text-lime">
           <p className="mb-2">
             <span className="font-bold">Lorem ipsum dolor sit amet,</span> consetetur sadipscing elitr.
           </p>
