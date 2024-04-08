@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getSelectedCityWeather } from "../../services/dataService";
 
 export default function ThreeDCardDemo() {
-  const [location, setLocation] = useState("Nürnberg");
+  const [location, setLocation] = useState("Berlin");
   const [data, setData] = useState(null);
 
   const handleLocationChange = (event) => {
@@ -41,7 +41,7 @@ export default function ThreeDCardDemo() {
           <CardItem as={"p"} className="text-xl font-bold text-neutral-600 dark:text-white">
             <p>
               <img
-                src="//cdn.weatherapi.com/weather/64x64/day/116.png"
+                src={data?.current.condition.icon}
                 className="  object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
